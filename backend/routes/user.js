@@ -28,10 +28,6 @@ const updateBody = zod.object({
 
 // routes
 
-router.get("/", async (req, res) => {
-  return res.json({ message: "Hello there" });
-});
-
 // Route to sign up the user
 router.post("/signup", async (req, res) => {
   const { success } = signupBody.safeParse(req.body);
