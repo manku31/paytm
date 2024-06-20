@@ -11,7 +11,7 @@ export function SendMoney() {
 
   const tarnsferMoney = async () => {
     await axios.post(
-      "http://localhost:3000/api/v1/account/transfer",
+      "https://paytm-hucr.onrender.com/api/v1/account/transfer",
       {
         to: id,
         amount,
